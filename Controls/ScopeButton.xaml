@@ -1,0 +1,24 @@
+﻿<UserControl x:Class="ElectronicLib.Controls.ScopeButton"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ElectronicLib.Controls"
+             mc:Ignorable="d" 
+             d:DesignHeight="150" d:DesignWidth="300" BorderBrush="White" BorderThickness="5" >
+    <Grid Background="White" Margin="5">
+        <Label x:Name="label" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Times New Roman" FontSize="20" RenderTransformOrigin="0.5,0.5" ScrollViewer.VerticalScrollBarVisibility="Disabled">
+            <Label.Style>
+                <Style TargetType="{x:Type Label}">
+                    <Style.Triggers >
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Foreground" Value="#FF571DFF"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Label.Style>
+            Scope Button
+        </Label>
+    </Grid>
+
+</UserControl>

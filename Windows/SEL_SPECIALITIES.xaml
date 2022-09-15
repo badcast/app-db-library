@@ -1,0 +1,29 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ElectronicLib.Windows"
+             xmlns:Controls="clr-namespace:ElectronicLib.Controls" x:Class="ElectronicLib.Windows.SEL_SPECIALITIES"
+             mc:Ignorable="d" 
+             Height="589" Width="986" Background="#FF878787">
+    <UserControl.Resources>
+        <ControlTemplate x:Key="ItmTemplate" TargetType="{x:Type Button}">
+
+        </ControlTemplate>
+    </UserControl.Resources>
+    <Grid>
+
+
+        <Border BorderBrush="White" Margin="45,115,51,44" BorderThickness="5" >
+            <ListBox x:Name="List_Specialities" Margin="100,5,110,5" Background="{x:Null}" BorderBrush="{x:Null}">
+                <Controls:ScopeButton Width="660" Margin="3"/>
+                <Controls:ScopeButton Width="660" Margin="3"/>
+                <Controls:ScopeButton Width="660" Margin="3"/>
+            </ListBox>
+        </Border>
+        <Controls:ScopeLabel x:Name="label" HorizontalAlignment="Left" Height="80" Margin="75,10,0,0" VerticalAlignment="Top" Width="836"/>
+        <Controls:LeftButton x:Name="backBtn" HorizontalAlignment="Left" Height="60" Margin="10,10,0,0" VerticalAlignment="Top" Width="60" MouseDown="LeftButton_MouseDown"/>
+        <Controls:HomeButton HorizontalAlignment="Left" Height="60" Margin="916,10,0,0" VerticalAlignment="Top" Width="60"/>
+    </Grid>
+</UserControl>
